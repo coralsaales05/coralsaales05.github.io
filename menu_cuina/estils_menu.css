@@ -1,0 +1,170 @@
+:root {
+--groc: #dfee00;
+--blau: #2d2de8;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f1f1e3;
+background-image: url("fondo.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+header {
+width: 80%;
+margin: 6px auto 0 auto;
+background-color: white;
+border: 10px solid var(--groc);
+padding: 22px 0;
+text-align: center;
+}
+
+header h1 {
+margin: 0;
+font-size: 28px;
+color: var(--groc);
+}
+
+nav {
+text-align: center;
+margin-top: 19px;
+}
+
+nav a {
+display: inline-block;
+background-color: var(--groc);
+color: black;
+text-decoration: none;
+font-size: 13px;
+padding: 9px 10px;
+margin: 0 2px;
+}
+
+main {
+flex: 1;
+position: relative;
+padding: 25px 0 60px 0;
+}
+
+article {
+width: fit-content;
+margin: 0 auto 20px auto;
+background-color: white;
+border: 9px solid var(--blau);
+padding: 20px 10px 20px 10px;
+box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+article h2 {
+margin: 0 0 40px 0;
+font-size: 22px;
+}
+
+article h2 a {
+color: var(--blau);
+}
+
+article p {
+margin: 0;
+max-width: 110px;
+font-size: 13px;
+}
+
+aside {
+position: absolute;
+left: 0;
+bottom: 12px;
+font-size: 13px;
+}
+
+aside ul {
+margin: 0;
+padding-left: 32px;
+list-style: disc;
+}
+
+aside li {
+margin-left: -14px;
+}
+
+footer {
+width: 80%;
+margin: 0 auto;
+background-color: white;
+border: 10px solid var(--groc);
+text-align: center;
+padding: 0;
+}
+
+footer p {
+margin: 0;
+padding: 1px 0 2px 0;
+font-size: 16px;
+font-weight: bold;
+}
+
+.decoracio p {
+position: absolute;
+font-family: "Comic Sans MS", cursive;
+font-size: 16px;
+font-weight: bold;
+margin: 0;
+z-index: 0;
+}
+
+.smoothie {
+top: 100px;
+left: 10%;
+transform: rotate(-15deg);
+}
+
+.acai {
+top: 0;
+right: 2%;
+transform: rotate(15deg);
+}
+
+.fresh {
+bottom: 20px;
+right: 15%;
+transform: rotate(5deg);
+}
+
+.comanda {
+background-color: white;
+border: 10px solid var(--groc);
+width: 40%;
+margin: 20px auto 40px auto;
+padding: 10px;
+font-size: 13px;
+}
+
+.comanda h2 {
+font-size: 16px;
+margin: 0 0 10px 0;
+}
+
+.comanda label,
+.comanda input,
+.comanda select,
+.comanda button {
+display: block;
+margin: 5px 0;
+}
+
+.comanda button {
+background-color: var(--groc);
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+}
